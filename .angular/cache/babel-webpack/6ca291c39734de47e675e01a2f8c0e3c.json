@@ -1,0 +1,1 @@
+{"ast":null,"code":"const root = {\n  path: 'home'\n};\nexport const HomePaths = {\n  root\n};","map":null,"metadata":{},"sourceType":"module"}

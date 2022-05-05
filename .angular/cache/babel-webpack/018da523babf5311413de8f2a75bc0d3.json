@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var EyeColor = /*#__PURE__*/(() => {\n  (function (EyeColor) {\n    EyeColor[\"Brown\"] = \"brown\";\n    EyeColor[\"Green\"] = \"green\";\n    EyeColor[\"Blue\"] = \"blue\";\n    EyeColor[\"Dark\"] = \"dark\";\n  })(EyeColor || (EyeColor = {}));\n\n  return EyeColor;\n})();","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,49 @@
+<app-header [userFirstAndLastName]="'jonas'"></app-header>
+
+<router-outlet></router-outlet>
+
+
+<!-- 
+<app-customer-letter *ngFor="let letter of ['A', 'B', 'C', 'D', 'E']"
+                     [customLetter]="letter"
+                     (selectCustomLetter)="onSelectCustomLetter($event)"></app-customer-letter>
+
+<h1>Vartotoju sarasas</h1>
+<ul *ngIf="users.length; else emptyList">
+  <li *ngFor="let user of users"
+      [class]="user.eyeColor">
+    {{user.firstName}} {{user.lastName}}
+
+    <ng-container [ngSwitch]="user.eyeColor">
+      <h3 *ngSwitchCase="EyeColor.Blue">Vartotojo akiu spalva yra melyna</h3>
+      <a *ngSwitchCase="EyeColor.Green"
+         href="https://www.google.com">www.google.com</a>
+      <a *ngSwitchCase="EyeColor.Brown"
+         href="https://www.google.com">www.google.com</a>
+      <a *ngSwitchCase="EyeColor.Dark"
+         href="https://www.google.com">www.google.com</a>
+      <h3 *ngSwitchDefault>Vartotojo akiu spalva neatpazinta</h3>
+    </ng-container>
+
+    <button (click)="selectUserDetails(user)">{{user.id}}</button>
+  </li>
+</ul>
+
+<ng-container *ngIf="selectedUser; else nothingIsSelected">
+  <h1>Selected user is {{selectedUser?.firstName}}</h1>
+  <p>
+    {{selectedUser | json}}
+  </p>
+  <button (click)="clearSelectedData()">Clear selected data</button>
+</ng-container>
+
+<ng-template #nothingIsSelected>
+  <h1>Niekas nepasirinkta</h1>
+</ng-template>
+
+<ng-template #emptyList>
+  <h2 id="123"
+      class="empty-list">Sarasas yra tuscias</h2>
+</ng-template>
+
+<h3>Selected letter is -- {{selectedLetter}}</h3> -->

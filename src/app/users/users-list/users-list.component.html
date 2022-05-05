@@ -1,0 +1,15 @@
+<p *ngIf="errorMessage">{{errorMessage}}</p>
+
+<!-- <ng-container *ngIf="users$ | async as users"> -->
+  <ng-container *ngIf="loading$ | async; then spinnerTemplate else contentTemplate"></ng-container>
+
+  <ng-template #contentTemplate>
+    <app-users-list-view [users]="users$ | async"
+                         (deleteUser)="onDeleteUser($event)"></app-users-list-view>
+  </ng-template>
+
+<!-- </ng-container> -->
+
+<ng-template #spinnerTemplate>
+  <div class="spinner"></div>
+</ng-template>

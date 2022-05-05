@@ -1,0 +1,100 @@
+<form [formGroup]="userForm">
+  <div>
+    <label>
+      Name:
+      <input formControlName="firstName"
+             [class.error]="firstNameControl?.errors">
+    </label>
+
+    <p *ngIf="firstNameControl?.errors?.required"
+       class="text-error">
+      This field is required
+    </p>
+    <p *ngIf="firstNameControl?.errors?.minlength"
+       class="text-error">
+      This field should be minimum of {{firstNameControl?.errors?.minlength.requiredLength}}
+      characters , but you entered {{firstNameControl?.errors?.minlength.actualLength}}
+    </p>
+  </div>
+  <div>
+    <label>
+      Last name:
+      <input formControlName="lastName">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Age:
+      <input formControlName="age"
+             type="number">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Eye color:
+      <select formControlName="eyeColor">
+        <option [value]="color.value"
+                *ngFor="let color of EyeColor | keyvalue">
+          {{color.key}}
+        </option>
+      </select>
+    </label>
+  </div>
+
+  <div formGroupName="address">
+    <p>Address:</p>
+    <div>
+      <label>
+        Country:
+        <input formControlName="country">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        City:
+        <input formControlName="city">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Street:
+        <input formControlName="street">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        House number:
+        <input formControlName="houseNumber">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Flat number:
+        <input formControlName="flatNumber">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Postal code:
+        <input formControlName="postalCode">
+      </label>
+    </div>
+  </div>
+
+  <div>
+    <button *ngIf="!editIsInProgress && !updateIsInProgress"
+            (click)="onEditBtnClick()">Edit</button>
+    <button *ngIf="editIsInProgress"
+            (click)="onSaveBtnClick()"
+            [disabled]="!userForm.valid || updateIsInProgress">Save</button>
+    <button (click)="onCancelBtnClick()"
+            [disabled]="!editIsInProgress || updateIsInProgress">Cancel</button>
+  </div>
+</form>

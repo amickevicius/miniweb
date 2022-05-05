@@ -1,0 +1,1 @@
+{"ast":null,"code":"const root = {\n  path: 'users'\n};\nconst list = {\n  path: 'list'\n};\nconst details = {\n  path: ':id'\n};\nexport const UsersPaths = {\n  root,\n  list,\n  details\n};","map":null,"metadata":{},"sourceType":"module"}

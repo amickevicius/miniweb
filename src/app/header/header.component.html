@@ -1,0 +1,16 @@
+<nav>
+  <a class="logo"
+     [routerLink]="HomePaths.root.path"
+     routerLinkActive="active">{{userFirstAndLastName}}</a>
+
+  <ul>
+    <li>
+      <a [routerLink]="UsersPaths.root.path"
+         routerLinkActive="active">Users</a>
+    </li>
+    <li>
+      <a [routerLink]="MoviesPaths.root.path"
+         routerLinkActive="active">Movies</a>
+    </li>
+  </ul>
+</nav>

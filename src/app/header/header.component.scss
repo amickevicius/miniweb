@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  background: rgb(175, 163, 0);
+  padding: 10px 20px;
+
+  a {
+    text-decoration: none;
+
+    &.logo {
+      font-size: 32px;
+      color: rgb(240, 4, 220);
+
+      &.active {
+        color: rgb(211, 11, 11);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      a {
+        padding: 8px 32px;
+        background: rgb(240, 4, 220);
+        border-radius: 8px;
+        color: rgb(71, 65, 4);
+        transition: .5s;
+
+        &:hover {
+          background: rgb(71, 65, 4);
+          color: rgb(240, 4, 220);
+        }
+
+        &.active {
+          background: rgba(245, 248, 80, 0.822);
+          color: rgb(53, 2, 15);
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

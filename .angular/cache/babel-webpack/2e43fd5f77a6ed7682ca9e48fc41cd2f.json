@@ -1,0 +1,1 @@
+{"ast":null,"code":"const root = {\n  path: 'movies'\n};\nexport const MoviesPaths = {\n  root\n};","map":null,"metadata":{},"sourceType":"module"}

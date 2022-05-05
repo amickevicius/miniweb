@@ -1,0 +1,17 @@
+<!-- <ng-container *ngIf="!users?.length; then spinnerTemplate else contentTemplate"></ng-container>
+
+<ng-template #contentTemplate> -->
+<ul>
+  <li *ngFor="let user of users">
+    {{user.firstName}}
+    <button (click)="onDeleteBtnClick(user.id)">Delete</button>
+    <button (click)="onInfoBtnClick(user.id)">Info</button>
+  </li>
+</ul>
+<!-- </ng-template>
+
+
+
+<ng-template #spinnerTemplate>
+  <div class="spinner"></div>
+</ng-template> -->

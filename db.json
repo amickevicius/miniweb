@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "firstName": "Tomas",
+      "lastName": "Jersovas",
+      "age": 32,
+      "address": {
+        "country": "Lithuaniaasdasd",
+        "city": "Vilniusasdasdasdasdas",
+        "street": null,
+        "houseNumber": "13a",
+        "flatNumber": "1",
+        "postalCode": "LT-81101"
+      },
+      "eyeColor": "green"
+    },
+    {
+      "id": 3,
+      "firstName": "Auste",
+      "lastName": "Jersova",
+      "age": 30,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lithuania",
+        "postalCode": "LT-81101",
+        "houseNumber": "13a",
+        "flatNumber": "1"
+      },
+      "eyeColor": "green"
+    }
+  ],
+  "movies": [
+    {
+      "movieName": "name",
+      "author": "author",
+      "imgUrl": "https://imgurl.com"
+    }
+  ]
+}
